@@ -1,300 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Dondon Dev">
-    <meta name="theme-color" content="#42b549">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Doni</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            /* Serif fonts are often safer for ATS, though sans-serif is usually fine too. */
+            line-height: 1.4;
+            color: #000;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-    <title>Dondon Dev</title>
+        header {
+            text-align: center;
+            border-bottom: 1px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
 
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="stylesheet" href="css/bootstrap.css"/>
-    <link rel="stylesheet" href="css/bootstrap-grid.css"/>
-    <link rel="stylesheet" href="css/bootstrap-reboot.css"/>
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="stylesheet" href="css/main-ipad.css"/>
-    <link rel="stylesheet" href="css/main-iphone-landscape.css"/>
-    <link rel="stylesheet" href="css/main-iphone-portrait.css"/>
-    <link rel="stylesheet" href="css/main-iphone6-landscape.css"/>
-    <link rel="stylesheet" href="css/main-iphone6-portrait.css"/>
-    <link rel="stylesheet" href="css/main-iphoneX-landscape.css"/>
-    <link rel="stylesheet" href="css/main-iphoneX-portrait.css"/>
+        h1 {
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 24px;
+        }
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        .contact-info {
+            margin-top: 5px;
+            font-size: 14px;
+        }
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131047672-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        section {
+            margin-bottom: 20px;
+        }
 
-        gtag('config', 'UA-131047672-1');
-    </script>
+        h2 {
+            font-size: 16px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 3px;
+            margin-bottom: 10px;
+        }
+
+        .job,
+        .education-item,
+        .project {
+            margin-bottom: 15px;
+        }
+
+        .job-header,
+        .edu-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+
+        .job-title {
+            font-style: italic;
+        }
+
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 3px;
+        }
+    </style>
 </head>
-<body>
-    <!-- HEADER -->
-    <header class="home">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <div class="navbar-brand logo">Dondon Dev</div>
-                <ul class="nav main-nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/index.html">Home</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="/what-i-do.html">What I Do</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/works.html">Works</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
 
-        <div class="header-message">
-            <h1>SOFTWARE DEVELOPER</h1>
-            <h2>Work smart to build Amazing App</h2>
+<body>
+
+    <header>
+        <h1>Romdoni Agung Purbayanto (Doni)</h1>
+        <div class="contact-info">
+            Depok, Indonesia | <a href="https://www.linkedin.com/in/romdoni-agung-30815986/">LinkedIn</a> |
+            <a href="https://github.com/black-lotus">GitHub</a> | <a
+                href="mailto:donnydiunindra@gmail.com?subject=Job%20offers">Email</a>
         </div>
     </header>
-    <!-- //HEADER -->
-    <div class="container">
-        <h2 class="first-introduction-text">Check Out Features</h2>
-    </div>
-    <!-- FEATURES -->
-    <div class="home-features">
-        <div class="container">
+
+    <section id="summary">
+        <h2>Professional Summary</h2>
+        <p>
+            I am a software engineer with a passion for coding and delivering high-quality products. I have a
+            strong fundamental knowledge of computer science, design patterns, and DDD. As an engineer, I
+            emphasize the right balances of runtime, space & maintainability - delivering highly resilient, fault-
+            tolerant, and low latency services.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <p>
+            <strong>Languages:</strong> Go, Python, Java, JavaScript, Kotlin, Swift, etc.<br>
+            <strong>Frameworks:</strong> Vue, React, Angular, Spring Boot, etc.<br>
+            <strong>Tools:</strong> Git, Docker, Kubernetes, AWS, GCP, etc.<br>
+            <strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, etc.
+        </p>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+            <div class="job-header">
+                <span>PT SiCepat Ekspress</span>
+                <span>Jakarta, Indonesia</span>
+            </div>
+            <div class="job-header">
+                <span class="job-title">Tech Lead / Software Engineer III</span>
+                <span>Feb 2022 – Present</span>
+            </div>
             <ul>
-                <li>
-                    <div class="my-card">
-                        <img src="images/feature-backend.png" alt="Rest API">
-                        <h5 class="title">Rest API</h5>
-                    </div>
+                <li>Spearheaded end-to-end product lifecycle, from architecture and development to deployment and
+                    comprehensive observability.</li>
+                <li>Authored and standardized critical technical documentation (TRD, RFC, RCA) to establish engineering
+                    best practices and knowledge sharing.</li>
+                <li>Orchestrated the successful migration of legacy monolithic systems to a scalable microservices
+                    architecture.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span>PT Bank Aladin Syariah Tbk</span>
+                <span>Jakarta, Indonesia</span>
+            </div>
+            <div class="job-header">
+                <span class="job-title">Software Engineer III</span>
+                <span>Jul 2021 - Jan 2022</span>
+            </div>
+            <ul>
+                <li>Led full-cycle product development, ensuring seamless deployment and implementing robust
+                    observability pipelines.</li>
+                <li>Elevated code quality and maintainability by driving extensive refactoring initiatives and
+                    increasing test coverage.</li>
+                <li>Optimized system performance, achieving a measurable 20% reduction in latency.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span>PT Global Tiket Network</span>
+                <span>Jakarta, Indonesia</span>
+            </div>
+            <div class="job-header">
+                <span class="job-title">Tech Lead / Software Engineer III</span>
+                <span>Jun 2018 - Jun 2021</span>
+            </div>
+            <ul>
+                <li>Spearheaded end-to-end product lifecycle, from architecture and development to deployment and
+                    comprehensive observability.</li>
+                <li>Elevated code quality and maintainability by driving extensive refactoring initiatives and
+                    increasing test coverage.</li>
+                <li>Engineered a robust full-stack integration (search-to-refund) with flight suppliers, maintaining
+                    exceptionally low error rates.
                 </li>
-                <li>
-                    <div class="my-card">
-                        <img src="images/feature-website.png" alt="Website"/>
-                        <h5 class="title">Website</h5>
-                    </div>
-                </li>
-                <li>
-                    <div class="my-card">
-                        <img src="images/feature-ios.png" alt="iOS App"/>
-                        <h5 class="title">iOS App</h5>
-                    </div>
-                </li>
-                <li>
-                    <div class="my-card">
-                        <img src="images/feature-android.png" alt="Android App"/>
-                        <h5 class="title">Android App</h5>
-                    </div>
+                <li>Executed a complete (100%) migration of mission-critical monolithic applications to microservices.
                 </li>
             </ul>
         </div>
-    </div>
-    <!-- //FEATURES -->
-    <div class="container">
-        <h2 class="first-introduction-text">How I do it</h2>
-    </div>
 
-    <div class="how-card">
-        <div class="body">
-            <h5 class="title">PLAN</h5>
-            <div class="content">
-                It's your vision, so the ﬁrst thing we do is get round a table and talk through your ideas with you in detail. Using this information, we create a plan that outlines the project objectives and how your business website will work.
+        <div class="job">
+            <div class="job-header">
+                <span>PT Stockbit Sekuritas Digital</span>
+                <span>Jakarta, Indonesia</span>
+            </div>
+            <div class="job-header">
+                <span class="job-title">iOS Engineer</span>
+                <span>Jun 2016 - Jun 2018</span>
+            </div>
+            <ul>
+                <li>Championed iOS app development, managing the complete release cycle to the App Store and ensuring
+                    high application stability.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span>PT Dwidaya World Wide</span>
+                <span>Jakarta, Indonesia</span>
+            </div>
+            <div class="job-header">
+                <span class="job-title">Full Stack Engineer</span>
+                <span>Aug 2015 - Jun 2016</span>
+            </div>
+            <ul>
+                <li>Architected and deployed core search, booking, and payment services for hotel and flight
+                    inventories.</li>
+                <li>Designed and managed a custom calendar solution to streamline scheduling operations.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span>PT Logisera</span>
+                <span>Jakarta, Indonesia</span>
+            </div>
+            <div class="job-header">
+                <span class="job-title">Full Stack Engineer</span>
+                <span>Mar 2014 - Jun 2015</span>
+            </div>
+            <ul>
+                <li>Managed full-stack development, delivering end-to-end solutions from concept to deployment.</li>
+                <li>Integrated and optimized an embedded game module within the application ecosystem.</li>
+                <li>Devised and executed strategic SEO optimizations to improve search visibility.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span>2CreativesMedia</span>
+                <span>Jakarta, Indonesia</span>
+            </div>
+            <div class="job-header">
+                <span class="job-title">Full Stack Engineer</span>
+                <span>Jul 2013 - Apr 2014</span>
+            </div>
+            <ul>
+                <li>Created a web application for a client.</li>
+                <li>Translated UI/UX designs into pixel-perfect, responsive HTML/CSS.</li>
+                <li>Developed an interactive website and mobile application.</li>
+                <li>Suggested and implemented SEO optimization.</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <strong>SushiTei iOS App</strong> | <em>Swift, Xcode, Git</em>
+            <ul>
+                <li>Digitized a sushi restaurant experience</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <strong>NoGeek Brain Game</strong> | <em>Swift, SpriteKit, Java, Android SDK, LibGDX, Git</em>
+            <ul>
+                <li>Developed a game for both iOS and Android</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <strong>Bukamenu</strong> | <em>Java, Android SDK, VueJS, Git</em>
+            <ul>
+                <li>Mobile App to order foods and meals</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <strong>BTPN Campaign Game</strong> | <em>Java, LibGDX, Git</em>
+            <ul>
+                <li>Sliced design into sprite images</li>
+                <li>Developed a desktop game using LibGDX</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <strong>Neo Dangdut Web Portal</strong> | <em>PHP, CodeIgniter, MySQL, JQuery, Bootstrap, Git</em>
+            <ul>
+                <li>Web portal for Dangdut enthusiasts</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <strong>Asias Got Talent</strong> | <em>PHP, MySQL, JQuery, Bootstrap, Git</em>
+            <ul>
+                <li>Walk-in registration</li>
+                <li>Data entry and verification</li>
+                <li>Talent management</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <strong>Berita Satu</strong> | <em>PHP, CodeIgniter, MySQL, JQuery, Bootstrap, Git</em>
+            <ul>
+                <li>News website</li>
+                <li>News management just like CMS</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <strong>Two Little Toes</strong> | <em>Wordpress, PHP, MySQL, Git</em>
+            <ul>
+                <li>E-Commerce website for selling baby products</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <strong>Game Contest</strong> | <em>HTML5, JavaScript, CSS</em>
+            <ul>
+                <li>HTML5 game for game contest</li>
+                <li>Demo: <a href="https://www.youtube.com/watch?v=4Yw8bLosrJA">YouTube</a></li>
+                <li>Game: <a href="https://www.dropbox.com/s/8mwa56u89yyy4k9/KK4_ROMDONI_290114.zip?dl=0">Download</a>
+                </li>
+                <li>Organizer: <a href="http://konteskoding.com">konteskoding.com</a></li>
+                <li>Winner: <a href="http://konteskoding.com/2014/03/02/juara-k.pas">Announcement</a></li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <strong>Depok Web</strong> | <em>Wordpress, PHP, MySQL, Git</em>
+            <ul>
+                <li>Portfolio website for website development</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <strong>Maharani Media Website</strong> | <em>PHP, CodeIgniter, MySQL, JQuery, Bootstrap, Git</em>
+            <ul>
+                <li>Catalog website for health products</li>
+                <li>SSO Management and Integration</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <div class="edu-header">
+                <span>University of Indraprasta PGRI</span>
+                <span>Jakarta, Indonesia</span>
+            </div>
+            <div class="edu-header">
+                <span class="job-title">Bachelor of Science in Information Technology</span>
+                <span>Graduated in 2014</span>
             </div>
         </div>
-        <img src="images/how-plan.png" alt="Plan">
-    </div>
+    </section>
 
-    <div class="how-card">
-        <div class="body">
-            <h5 class="title">DESIGN</h5>
-            <div class="content">
-                Once i have a plan, incorporate branding, content strategy, analytics and more, i start the design. I'll turn your vision into your business app, creating your app’s design based on your objectives.
-            </div>
-        </div>
-        <img src="images/how-design.png" alt="Design">
-    </div>
-
-    <div class="how-card">
-        <div class="body">
-            <h5 class="title">DEVELOP</h5>
-            <div class="content">
-                This is where i make the design come to life. After create interface, it's time for us to start developing. Based on your vision, we will integrate the customised features and functions outlined in the initial plan.
-            </div>
-        </div>
-        <img src="images/how-develop.png" alt="Develop">
-    </div>
-
-    <div class="how-card">
-        <div class="body">
-            <h5 class="title">DEPLOY</h5>
-            <div class="content">
-                Your app’s is almost complete. I'll test it, refining it as i go, and then ready for launching. Your app’s is now live, built around your specific objectives and to your vision. Now you can control that by your self.
-            </div>
-        </div>
-        <img src="images/how-deploy.png" alt="Deploy">
-    </div>
-
-    <footer>
-        <div class="footer-message">
-            <div class="footer-bar"></div>
-            <div class="container">
-                <div id="footer-carousel">
-                    <img src="images/arrow-left.png" class="arrow" id="button-prev"/>
-                    <div id="slides">
-                        <ul>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <p class="quote-phrase">
-                                        <span class="quote-marks">"</span>I never Lose<span class="quote-marks">"</span>
-                                        <br>
-                                        I either <b>win</b> or <b>learn</b>
-                                    </p>
-                                </div>
-                                <div class="authorContainer">
-                                    <p class="quote-author">Nelson Mandela</p>
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <p class="quote-phrase">
-                                        <span class="quote-marks">"</span>I am not failed<span class="quote-marks">"</span><br>
-                                        It was learning <b>Experience</b>
-                                    </p>
-                                </div>
-                                <div class="authorContainer">
-                                    <p class="quote-author">Anonymous</p>
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <p class="quote-phrase">
-                                        Live as if you were die <b>tomorrow</b>.<br>
-                                        Learn as if you were to live <b>forever</b>
-                                    </p>
-                                </div>
-                                <div class="authorContainer">
-                                    <p class="quote-author">Mahatma Gandhi</p>
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <p class="quote-phrase">
-                                        <span class="quote-marks">"</span>
-                                        You don't learn to walk by following rules. You learn by doing. and by <b>falling over</b>
-                                        <span class="quote-marks">"</span>
-                                    </p>
-                                </div>
-                                <div class="authorContainer">
-                                    <p class="quote-author">Richard Branson</p>
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <p class="quote-phrase">
-                                        <span class="quote-marks">"</span>
-                                        Get busy <b>living</b>
-                                        <span class="quote-marks">"</span>
-                                        <br>
-                                        OR
-                                        <br>
-                                        <span class="quote-marks">"</span>
-                                        Get busy <b>dying</b>
-                                        <span class="quote-marks">"</span>
-                                    </p>
-                                </div>
-                                <div class="authorContainer">
-                                    <p class="quote-author">Stephen King</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <img src="images/arrow-right.png" class="arrow" id="button-next"/>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            Dondon Dev © 2018 All Rights Reserved.
-        </div>
-    </footer>
-    <script>
-        $(document).ready(function () {
-            //rotation speed and timer
-            var speed = 5000;
-
-            var run = setInterval(rotate, speed);
-            var slides = $('.slide');
-            var container = $('#slides ul');
-            var elm = container.find(':first-child').prop("tagName");
-            var item_width = container.width();
-            slides.width(item_width); //set the slides to the correct pixel width
-            container.parent().width(item_width);
-            container.width(slides.length * item_width); //set the slides container to the correct total width
-            container.find(elm + ':first').before(container.find(elm + ':last'));
-            resetSlides();
-
-
-            //if user clicked on prev button
-
-            $('#button-prev').click(function (e) {
-                // slide the item
-                if (container.is(':animated')) {
-                    return false;
-                }
-
-                container.stop().animate({
-                    'left': 0
-                }, 1500, function () {
-                    container.find(elm + ':first').before(container.find(elm + ':last'));
-                    resetSlides();
-                });
-
-                // cancel the link behavior
-                return false;
-
-            });
-
-            $('#button-next').click(function (e) {
-                // slide the item
-                if (container.is(':animated')) {
-                    return false;
-                }
-
-                container.stop().animate({
-                    'left': item_width * -2
-                }, 1500, function () {
-                    container.find(elm + ':last').after(container.find(elm + ':first'));
-                    resetSlides();
-                });
-
-                // cancel the link behavior
-                return false;
-            });
-
-            // if mouse hover, pause the auto rotation, otherwise rotate it
-            container.parent().mouseenter(function () {
-                clearInterval(run);
-            }).mouseleave(function () {
-                run = setInterval(rotate, speed);
-            });
-
-
-            function resetSlides() {
-                // and adjust the container so current is in the frame
-                container.css({
-                    'left': -1 * item_width
-                });
-            }
-
-        });
-
-        // a simple function to click next link
-        // a timer will call this function, and the rotation will begin
-        function rotate() {
-            $('#button-next').click();
-        }
-    </script>
 </body>
+
 </html>
