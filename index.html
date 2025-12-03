@@ -17,31 +17,36 @@
     <link rel="canonical" href="https://black-lotus.github.io/">
     <style>
         body {
-            font-family: 'Times New Roman', Times, serif;
-            /* Serif fonts are often safer for ATS, though sans-serif is usually fine too. */
-            line-height: 1.4;
+            font-family: 'Garamond', 'Georgia', serif;
+            line-height: 1.3;
             color: #000;
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 30px;
         }
 
         header {
             text-align: center;
             border-bottom: 1px solid #000;
-            padding-bottom: 10px;
+            padding-bottom: 15px;
             margin-bottom: 20px;
         }
 
         h1 {
             margin: 0;
             text-transform: uppercase;
-            font-size: 24px;
+            font-size: 28px;
+            letter-spacing: 1px;
         }
 
         .contact-info {
-            margin-top: 5px;
-            font-size: 14px;
+            margin-top: 8px;
+            font-size: 15px;
+        }
+
+        .contact-info a {
+            color: #000;
+            text-decoration: none;
         }
 
         section {
@@ -49,11 +54,12 @@
         }
 
         h2 {
-            font-size: 16px;
+            font-size: 18px;
             text-transform: uppercase;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px solid #000;
             padding-bottom: 3px;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
         }
 
         .job,
@@ -67,6 +73,15 @@
             display: flex;
             justify-content: space-between;
             font-weight: bold;
+            font-size: 16px;
+        }
+
+        .job-title-row {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            margin-bottom: 5px;
+            font-size: 15px;
         }
 
         .job-title {
@@ -74,17 +89,53 @@
         }
 
         ul {
-            margin-top: 5px;
+            margin-top: 3px;
             padding-left: 20px;
+            margin-bottom: 0;
         }
 
         li {
-            margin-bottom: 3px;
+            margin-bottom: 2px;
+        }
+
+        p {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        /* Project Grid Styles */
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            page-break-inside: avoid;
+        }
+
+        .project {
+            margin-bottom: 0;
+            /* Let grid handle gap */
+            break-inside: avoid;
         }
 
         @media print {
             .no-print {
                 display: none;
+            }
+
+            body {
+                padding: 0;
+                max-width: 100%;
+            }
+
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+
+            .project-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
             }
         }
     </style>
@@ -98,9 +149,10 @@
     <header>
         <h1>Romdoni Agung Purbayanto (Doni)</h1>
         <div class="contact-info">
-            Depok, Indonesia | <a href="https://www.linkedin.com/in/romdoni-agung-30815986/">LinkedIn</a> |
+            Depok, Indonesia | <a
+                href="https://www.linkedin.com/in/romdoni-agung-30815986/">linkedin.com/in/romdoni-agung</a> |
             <a href="https://github.com/black-lotus">GitHub</a> | <a
-                href="mailto:donnydiunindra@gmail.com?subject=Job%20offers">Email</a>
+                href="mailto:romdoni.agung.purbayanto@gmail.com?subject=Job%20offers">romdoni.agung.purbayanto@gmail.com</a>
         </div>
     </header>
 
@@ -136,12 +188,12 @@
                 <span>PT SiCepat Ekspress</span>
                 <span>Jakarta, Indonesia</span>
             </div>
-            <div class="job-header">
+            <div class="job-title-row">
                 <span class="job-title">Solutions Architect</span>
                 <span>Aug 2025 – Present</span>
             </div>
             <ul>
-                <li>Designed platform architecture based on multiple factors (traffic, user type, business impact) to
+                <li>Formulated platform architecture based on multiple factors (traffic, user type, business impact) to
                     balance reliability, cost, and operational complexity.</li>
                 <li>Maintained internal tools (deployment, observability, scaffolding) that automated 90% of DevOps
                     tasks, allowing developers to deploy and monitor services independently.</li>
@@ -156,7 +208,7 @@
                 <span>PT SiCepat Ekspress</span>
                 <span>Jakarta, Indonesia</span>
             </div>
-            <div class="job-header">
+            <div class="job-title-row">
                 <span class="job-title">Tech Lead / Software Engineer III</span>
                 <span>Feb 2022 – Aug 2025</span>
             </div>
@@ -169,7 +221,7 @@
                     architecture.</li>
                 <li>Ensured high availability and fault tolerance through load balancing, circuit breakers, and fallback
                     mechanisms.</li>
-                <li>Implemented an Outbox pattern to ensure data consistency and reliability.</li>
+                <li>Integrated an Outbox pattern to ensure data consistency and reliability.</li>
             </ul>
         </div>
 
@@ -178,7 +230,7 @@
                 <span>PT Bank Aladin Syariah Tbk</span>
                 <span>Jakarta, Indonesia</span>
             </div>
-            <div class="job-header">
+            <div class="job-title-row">
                 <span class="job-title">Software Engineer III</span>
                 <span>Jul 2021 - Jan 2022</span>
             </div>
@@ -198,7 +250,7 @@
                 <span>PT Global Tiket Network</span>
                 <span>Jakarta, Indonesia</span>
             </div>
-            <div class="job-header">
+            <div class="job-title-row">
                 <span class="job-title">Tech Lead / Software Engineer III</span>
                 <span>Jun 2018 - Jun 2021</span>
             </div>
@@ -220,7 +272,7 @@
                 <span>PT Stockbit Sekuritas Digital</span>
                 <span>Jakarta, Indonesia</span>
             </div>
-            <div class="job-header">
+            <div class="job-title-row">
                 <span class="job-title">iOS Engineer</span>
                 <span>Jun 2016 - Jun 2018</span>
             </div>
@@ -229,7 +281,7 @@
                     high application stability.</li>
                 <li>Engineered a high-performance WebSocket layer to handle real-time stock price updates and order book
                     data with minimal latency.</li>
-                <li>Developed complex, interactive financial charting modules (Candlestick, Line) supporting technical
+                <li>Built complex, interactive financial charting modules (Candlestick, Line) supporting technical
                     indicators and drawing tools.</li>
                 <li>Implemented "Stockbit Stream" social features, driving user engagement within the investor
                     community.</li>
@@ -243,14 +295,14 @@
                 <span>PT Dwidaya World Wide</span>
                 <span>Jakarta, Indonesia</span>
             </div>
-            <div class="job-header">
+            <div class="job-title-row">
                 <span class="job-title">Full Stack Engineer</span>
                 <span>Aug 2015 - Jun 2016</span>
             </div>
             <ul>
                 <li>Architected and deployed core search, booking, and payment services for hotel and flight
                     inventories.</li>
-                <li>Designed and managed a custom calendar solution to streamline scheduling operations.</li>
+                <li>Devised and managed a custom calendar solution to streamline scheduling operations.</li>
             </ul>
         </div>
 
@@ -259,7 +311,7 @@
                 <span>PT Logisera</span>
                 <span>Jakarta, Indonesia</span>
             </div>
-            <div class="job-header">
+            <div class="job-title-row">
                 <span class="job-title">Full Stack Engineer</span>
                 <span>Mar 2014 - Jun 2015</span>
             </div>
@@ -275,12 +327,12 @@
                 <span>2CreativesMedia</span>
                 <span>Jakarta, Indonesia</span>
             </div>
-            <div class="job-header">
+            <div class="job-title-row">
                 <span class="job-title">Full Stack Engineer</span>
                 <span>Jul 2013 - Apr 2014</span>
             </div>
             <ul>
-                <li>Created a web application for a client.</li>
+                <li>Developed a custom web application for a client to increase their operational efficiency</li>
                 <li>Translated UI/UX designs into pixel-perfect, responsive HTML/CSS.</li>
                 <li>Developed an interactive website and mobile application.</li>
                 <li>Suggested and implemented SEO optimization.</li>
@@ -291,51 +343,38 @@
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-            <strong>SushiTei iOS App</strong> | <em>Swift, Xcode, Git</em>
-            <ul>
-                <li>Digitized a sushi restaurant experience</li>
-            </ul>
+        <div class="project-grid">
+            <div class="project">
+                <strong>SushiTei iOS App</strong> | <em>Swift, Xcode, Git</em>
+                <ul>
+                    <li>Digitized a sushi restaurant experience</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <strong>NoGeek Brain Game</strong> | <em>Swift, SpriteKit, Java, Android SDK, LibGDX, Git</em>
+                <ul>
+                    <li>Created a game for both iOS and Android</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <strong>Asia's Got Talent</strong> | <em>PHP, MySQL, jQuery, Bootstrap, Git</em>
+                <ul>
+                    <li>Walk-in registration</li>
+                    <li>Data entry and verification</li>
+                    <li>Talent management</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <strong>Berita Satu</strong> | <em>PHP, CodeIgniter, MySQL, jQuery, Bootstrap, Git</em>
+                <ul>
+                    <li>News website</li>
+                    <li>News management just like CMS</li>
+                </ul>
+            </div>
         </div>
-
-        <div class="project">
-            <strong>NoGeek Brain Game</strong> | <em>Swift, SpriteKit, Java, Android SDK, LibGDX, Git</em>
-            <ul>
-                <li>Developed a game for both iOS and Android</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <strong>Asias Got Talent</strong> | <em>PHP, MySQL, JQuery, Bootstrap, Git</em>
-            <ul>
-                <li>Walk-in registration</li>
-                <li>Data entry and verification</li>
-                <li>Talent management</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <strong>Berita Satu</strong> | <em>PHP, CodeIgniter, MySQL, JQuery, Bootstrap, Git</em>
-            <ul>
-                <li>News website</li>
-                <li>News management just like CMS</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <strong>Game Contest</strong> | <em>HTML5, JavaScript, CSS</em>
-            <ul>
-                <li>HTML5 game for game contest</li>
-                <li>Demo: <a href="https://www.youtube.com/watch?v=4Yw8bLosrJA">YouTube</a></li>
-                <li>Game: <a href="https://www.dropbox.com/s/8mwa56u89yyy4k9/KK4_ROMDONI_290114.zip?dl=0">Download</a>
-                </li>
-                <li>Organizer: <a href="http://konteskoding.com">konteskoding.com</a></li>
-                <li>Winner: <a href="http://konteskoding.com/2014/03/02/juara-k.pas">Announcement</a></li>
-            </ul>
-        </div>
-
-
-
     </section>
 
     <section id="education">
@@ -345,7 +384,7 @@
                 <span>University of Indraprasta PGRI</span>
                 <span>Jakarta, Indonesia</span>
             </div>
-            <div class="edu-header">
+            <div class="job-title-row">
                 <span class="job-title">Bachelor of Science in Information Technology</span>
                 <span>Graduated in 2014</span>
             </div>
