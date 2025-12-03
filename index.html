@@ -81,11 +81,20 @@
         li {
             margin-bottom: 3px;
         }
+
+        @media print {
+            .no-print {
+                display: none;
+            }
+        }
     </style>
 </head>
 
 <body>
 
+    <div class="no-print" style="text-align: center; margin-bottom: 10px;">
+        <button onclick="window.print()" style="padding: 8px 16px; cursor: pointer;">Download PDF</button>
+    </div>
     <header>
         <h1>Romdoni Agung Purbayanto (Doni)</h1>
         <div class="contact-info">
@@ -297,28 +306,6 @@
         </div>
 
         <div class="project">
-            <strong>Bukamenu</strong> | <em>Java, Android SDK, VueJS, Git</em>
-            <ul>
-                <li>Mobile App to order foods and meals</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <strong>BTPN Campaign Game</strong> | <em>Java, LibGDX, Git</em>
-            <ul>
-                <li>Sliced design into sprite images</li>
-                <li>Developed a desktop game using LibGDX</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <strong>Neo Dangdut Web Portal</strong> | <em>PHP, CodeIgniter, MySQL, JQuery, Bootstrap, Git</em>
-            <ul>
-                <li>Web portal for Dangdut enthusiasts</li>
-            </ul>
-        </div>
-
-        <div class="project">
             <strong>Asias Got Talent</strong> | <em>PHP, MySQL, JQuery, Bootstrap, Git</em>
             <ul>
                 <li>Walk-in registration</li>
@@ -336,13 +323,6 @@
         </div>
 
         <div class="project">
-            <strong>Two Little Toes</strong> | <em>Wordpress, PHP, MySQL, Git</em>
-            <ul>
-                <li>E-Commerce website for selling baby products</li>
-            </ul>
-        </div>
-
-        <div class="project">
             <strong>Game Contest</strong> | <em>HTML5, JavaScript, CSS</em>
             <ul>
                 <li>HTML5 game for game contest</li>
@@ -354,20 +334,7 @@
             </ul>
         </div>
 
-        <div class="project">
-            <strong>Depok Web</strong> | <em>Wordpress, PHP, MySQL, Git</em>
-            <ul>
-                <li>Portfolio website for website development</li>
-            </ul>
-        </div>
 
-        <div class="project">
-            <strong>Maharani Media Website</strong> | <em>PHP, CodeIgniter, MySQL, JQuery, Bootstrap, Git</em>
-            <ul>
-                <li>Catalog website for health products</li>
-                <li>SSO Management and Integration</li>
-            </ul>
-        </div>
 
     </section>
 
