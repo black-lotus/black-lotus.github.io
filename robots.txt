@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://black-lotus.github.io/sitemap.xml
